@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F719A8CF-C9A8-4261-8AD3-DE4C907E9E29}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuizApp</RootNamespace>
+    <AssemblyName>QuizApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MyTestsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyTestsForm.Designer.cs">
+      <DependentUpon>MyTestsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyTestStatisticsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyTestStatisticsForm.Designer.cs">
+      <DependentUpon>MyTestStatisticsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PassingTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassingTestForm.Designer.cs">
+      <DependentUpon>PassingTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalAreaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalAreaForm.Designer.cs">
+      <DependentUpon>PersonalAreaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyStatisticsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyStatisticsForm.Designer.cs">
+      <DependentUpon>MyStatisticsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestCreatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestCreatorForm.Designer.cs">
+      <DependentUpon>TestCreatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizForm.Designer.cs">
+      <DependentUpon>QuizForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationForm.Designer.cs">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestEditorForm.Designer.cs">
+      <DependentUpon>TestEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestsForm.Designer.cs">
+      <DependentUpon>TestsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MyTestsForm.resx">
+      <DependentUpon>MyTestsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyTestStatisticsForm.resx">
+      <DependentUpon>MyTestStatisticsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassingTestForm.resx">
+      <DependentUpon>PassingTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalAreaForm.resx">
+      <DependentUpon>PersonalAreaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyStatisticsForm.resx">
+      <DependentUpon>MyStatisticsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestCreatorForm.resx">
+      <DependentUpon>TestCreatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizForm.resx">
+      <DependentUpon>QuizForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestEditorForm.resx">
+      <DependentUpon>TestEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestsForm.resx">
+      <DependentUpon>TestsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\add_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\attachment_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\conect_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\default_user_avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\home_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\menu_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\search_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClientServer\ClientServer.csproj">
+      <Project>{135d5aa2-6b48-4f20-b637-865ac76c141b}</Project>
+      <Name>ClientServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuizLibrary\QuizLibrary.csproj">
+      <Project>{6abb3734-21ab-4dac-8a1f-aca7aa5d2355}</Project>
+      <Name>QuizLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowControllers\WindowControllers.csproj">
+      <Project>{5997de62-9dec-46d8-aa8f-287a90b8e078}</Project>
+      <Name>WindowControllers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\add_2_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\delete_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\update_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\exit_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\image_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\personal_area_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\my_tests_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\analytics_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
